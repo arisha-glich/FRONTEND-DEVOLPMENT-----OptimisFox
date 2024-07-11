@@ -14,9 +14,9 @@ function uniqueObjects(arr) {
 }
 const input = [
     {id: 1, name: "abubakar", role: "engineering manager"},
-    {id: 2, name: "maham", role: "developer"},
+    {id: 3, name: "maham", role: "developer"},
     {id: 3, name: "shawal", role: "developer"},
-    {id: 1, name: "abubakar", role: "engineering manager"}
+    {id: 3, name: "abubakar", role: "engineering manager"}
 ];
 
 console.log(uniqueObjects(input));
@@ -39,6 +39,6 @@ function longestWord(string){
     }
     return longest;
 }
-console.log(longestWord("This is Optimusfox js internshipp22 class"))
+console.log(longestWord("This is Optimusfox js internship class"))
 
 
