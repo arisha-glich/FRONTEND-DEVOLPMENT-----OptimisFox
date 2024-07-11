@@ -9,7 +9,6 @@ function uniqueObjects(arr) {
             result.push(obj);
         }
     });
-
     return result;
 }
 const input = [
