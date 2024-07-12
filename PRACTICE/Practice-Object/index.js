@@ -34,3 +34,5 @@ function Person(firstName, lastName, age) {
   console.log(person2.age); // Output: 35
   console.log(person1.fullName()); // Output: Jane Smith
   
+
+
