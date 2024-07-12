@@ -1,21 +1,21 @@
-function fetchComments() {
-    const url = 'https://jsonplaceholder.typicode.com/comments';
+const fetchComments = async () => {
+    try {
+        const url = 'https://jsonplaceholder.typicode.com/comments';
 
-    return fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch comments');
-            }
-            return response.json();
-        })
-        .then(comments => {
-            const commentsWithName = comments.filter(comment => comment.name);
-            return commentsWithName;
-        })
-        .catch(error => {
-            console.error('Error fetching comments:', error);
-            throw error;
-        });
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Failed to fetch comments');
+        }
+
+        const comments = await response.json();
+
+        const commentsWithName = comments.filter(comment => comment.name);
+        return commentsWithName;
+
+    } catch (error) {
+        console.error('Error fetching comments:', error);
+        throw error;
+    }
 }
 
 function displayCommentsInTable(comments) {
@@ -30,7 +30,7 @@ function displayCommentsInTable(comments) {
     });
 }
 
-// Fetch comments 
+// Fetch comments
 fetchComments()
     .then(comments => {
         console.log('Filtered comments:', comments);

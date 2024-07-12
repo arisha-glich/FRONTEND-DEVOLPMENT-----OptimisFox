@@ -10,22 +10,21 @@
 //FIRST OF ALL COMMAND RUNS ON TERMINAL
 //=>>>>>>>>>>>>>>>   npm install axios 
 
-const fetchPosts = () => {
-    return axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(response => {
-            const posts = response.data;
+const fetchPosts = async () => {
+    try {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        const posts = response.data;
 
-            // Filter out posts that do not have a title
-            const filteredPosts = posts.filter(post => post.title);
+        // Filter out posts that do not have a title
+        const filteredPosts = posts.filter(post => post.title);
 
-            // Sort the remaining posts by their ID in ascending order
-            const sortedPosts = filteredPosts.sort((a, b) => a.id - b.id);
+        // Sort the remaining posts by their ID in ascending order
+        const sortedPosts = filteredPosts.sort((a, b) => a.id - b.id);
 
-            return sortedPosts;
-        })
-        .catch(error => {
-            console.error('Error fetching posts:', error);
-        });
+        return sortedPosts;
+    } catch (error) {
+        console.error('Error fetching posts:', error);
+    }
 };
 
 // Test the function by calling it and logging the result
