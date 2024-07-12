@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+    <script src="../JS/q4.js"></script>
+  </head>
+  <body>
+    <h2>THIS IS QUESTION 04 OF ASSIGNMENT NO 03</h2>
+    <h3>Define a function named fetchComments that uses the JSONPlaceholder API (https://jsonplaceholder.typicode.com) to fetch a list of comments and returns a promise that resolves to an array of comment objects. Use the axios library to make the API call and the data property to parse the response. Use the filter method to filter out the comments that do not have a name. Use the forEach method to display the remaining comments in a table format on a webpage. Write code to test this function by calling it and displaying the result on a webpage.</h3>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comments Table</h1>
+    <table id="commentsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Post ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table body will be dynamically generated here -->
+        </tbody>
+    </table>
+</body>
+</html>
