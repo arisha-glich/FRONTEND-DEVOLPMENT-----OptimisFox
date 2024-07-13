@@ -1,13 +1,10 @@
+const axios = require('axios');
 const fetchComments = async () => {
     try {
         const url = 'https://jsonplaceholder.typicode.com/comments';
 
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error('Failed to fetch comments');
-        }
-
-        const comments = await response.json();
+        const response = await axios.get(url);
+        const comments = response.data;
 
         const commentsWithName = comments.filter(comment => comment.name);
         return commentsWithName;

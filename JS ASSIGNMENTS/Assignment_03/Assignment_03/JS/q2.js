@@ -9,7 +9,7 @@
 
 //FIRST OF ALL COMMAND RUNS ON TERMINAL
 //=>>>>>>>>>>>>>>>   npm install axios 
-
+const axios = require('axios');
 const fetchPosts = async () => {
     try {
         const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
