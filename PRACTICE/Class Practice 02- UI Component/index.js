@@ -7,7 +7,6 @@ const user = {
     firstName: "Arisha",
     lastName: "Nawaz"
 };
-
 function getAvatarColor(firstName) {
     // Mapping of letters to colors
     const colorMap = {
@@ -33,7 +32,6 @@ avatarElement.style.backgroundColor = avatarColor;
 
 
 
-
 //SAME FUNCTION FOR LAST NAME
 function getAvatarColor(lastName) {
     const colorMap = {
@@ -46,9 +44,7 @@ function getAvatarColor(lastName) {
     };
    const lastLetter=lastName[0].toUpperCase(); 
 return colorMap[lastLetter] || "#3498vb";
-   
 }
-
 const avatarElement1 = document.getElementById('avatar1');
 const avatarColor1 = getAvatarColor(user.lastName);
 avatarElement1.style.backgroundColor = avatarColor1;
