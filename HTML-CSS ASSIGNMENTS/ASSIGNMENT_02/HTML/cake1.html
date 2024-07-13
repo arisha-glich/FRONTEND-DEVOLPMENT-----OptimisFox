@@ -13,6 +13,21 @@
       min-height: 100vh;
       background-color: #f0f8ff;
     }
+    @media (max-width: 767px) {
+      .sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #b8c0c6;
+        z-index: 9999;
+        padding-top: 60px;
+      }
+      .sidebar.active {
+        display: block;
+      }}
     .content {
       flex: 1;
       display: flex;
@@ -77,6 +92,7 @@
 
   <!-- Main Content -->
   <div class="content">
+    <button class="btn btn-primary d-md-none mb-3" id="toggleSidebar">Show Categories</button>
     <div class="sidebar col-md-3 col-lg-2">
       <h4>Categories</h4>
       <ul class="list-unstyled">
@@ -96,6 +112,11 @@
   <footer>
     <p>&copy; 2024 Cake Shop. All rights reserved.</p>
   </footer>
+  <script>
+    document.getElementById('toggleSidebar').addEventListener('click', function() {
+      document.querySelector('.sidebar').classList.toggle('active');
+    });
+  </script>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

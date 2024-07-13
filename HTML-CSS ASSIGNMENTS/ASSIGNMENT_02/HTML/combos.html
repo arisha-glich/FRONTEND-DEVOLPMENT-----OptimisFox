@@ -7,14 +7,13 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-     body {
+    body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       background-color: #f0f8ff;
     }
     .sidebar {
-      
       padding: 2rem;
       background-color: #b8c0c6;
       font-size: 22px; /* Increased font size for sidebar */
@@ -85,6 +84,7 @@
 
   <!-- Main Content -->
   <div class="content">
+   
     <h1 class="combo-title">Our Special Combos</h1>
     <p>Enjoy our special combo offers and get the best value for your money.</p>
     <div class="row">
@@ -149,6 +149,11 @@
   <footer>
     <p>&copy; 2024 Cake Shop. All rights reserved.</p>
   </footer>
+  <script>
+    document.getElementById('toggleSidebar').addEventListener('click', function() {
+      document.querySelector('.sidebar').classList.toggle('active');
+    });
+  </script>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
