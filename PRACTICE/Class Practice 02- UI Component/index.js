@@ -34,7 +34,6 @@ avatarElement.style.backgroundColor = avatarColor;
 
 //FOR LAST NAME
 function getAvatarColor(lastName) {
-    // Mapping of letters to colors
     const colorMap = {
         'A': '#687399', 'G': '#687399', 'M': '#687399', 'S': '#687399', 'Y': '#687399',
         'B': '#6DAEB0', 'H': '#6DAEB0', 'N': '#6DAEB0', 'T': '#6DAEB0', 'Z': '#6DAEB0',
@@ -49,7 +48,6 @@ return colorMap[lastLetter] || "#3498vb";
 }
 
 const avatarElement1 = document.getElementById('avatar1');
-// Set the background color of the avatar using the getAvatarColor function
 const avatarColor1 = getAvatarColor(user.lastName);
 avatarElement1.style.backgroundColor = avatarColor1;
 
