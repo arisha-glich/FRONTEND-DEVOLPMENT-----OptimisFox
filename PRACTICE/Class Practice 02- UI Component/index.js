@@ -2,8 +2,6 @@
 Write a function ( not compulsory ) to determine the avatar color based on the first letter of your first name.
 Apply the function to set and print the avatar color for your user. */
 
-
-
 //FOR FIRST NAME
 const user = {
     firstName: "Arisha",
