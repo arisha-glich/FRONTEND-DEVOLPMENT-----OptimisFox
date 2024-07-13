@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combos - Cake Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f0f8ff;
+    }
+    .sidebar {
+      
+      padding: 2rem;
+      background-color: #b8c0c6;
+      font-size: 22px; /* Increased font size for sidebar */
+    }
+    .main {
+      flex: 1;
+      padding: 1rem;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .combo-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .combo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .combo-title {
+      color: #58588c;
+    }
+    footer {
+      background-color: #58588c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .navbar {
+      background-color: #58588c !important;
+    }
+    .navbar-brand, .nav-link {
+      color: #f0f8ff !important;
+    }
+    .navbar-toggler-icon {
+      filter: invert(100%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Cake Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cakes.html">Cakes</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="combos.html">Combos <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1 class="combo-title">Our Special Combos</h1>
+    <p>Enjoy our special combo offers and get the best value for your money.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/tt.jpeg" class="card-img-top" alt="Combo 1">
+          <div class="card-body">
+            <h5 class="card-title">Birthday Combo</h5>
+            <p class="card-text">Includes a delicious chocolate cake, 12 cupcakes, and a bouquet of fresh flowers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/gg.jpg" class="card-img-top" alt="Combo 2">
+          <div class="card-body">
+            <h5 class="card-title">Anniversary Combo</h5>
+            <p class="card-text">Includes a red velvet cake, 12 macarons, and a box of chocolates.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/kk.jpeg" class="card-img-top" alt="Combo 3">
+          <div class="card-body">
+            <h5 class="card-title">Celebration Combo</h5>
+            <p class="card-text">Includes a fruit cake, 12 cake pops, and a bottle of sparkling cider.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/ss.jpg" class="card-img-top" alt="Combo 4">
+          <div class="card-body">
+            <h5 class="card-title">Family Combo</h5>
+            <p class="card-text">Includes a vanilla cake, 24 assorted cookies, and a box of truffles.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/tt.jpeg" class="card-img-top" alt="Combo 5">
+          <div class="card-body">
+            <h5 class="card-title">Holiday Combo</h5>
+            <p class="card-text">Includes a peppermint cake, 12 gingerbread cookies, and a hot cocoa kit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card combo-card">
+          <img src="../Images/cake22.jpg" class="card-img-top" alt="Combo 6">
+          <div class="card-body">
+            <h5 class="card-title">Special Combo</h5>
+            <p class="card-text">Includes a caramel cake, 12 eclairs, and a box of chocolate-covered strawberries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Cake Shop. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
