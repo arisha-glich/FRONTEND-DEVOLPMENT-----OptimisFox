@@ -19,7 +19,7 @@ function getAvatarColor(firstName) {
         'F': '#78518A', 'L': '#78518A', 'R': '#78518A', 'X': '#78518A'
     };
     // Get the first letter of the first name and convert to uppercase
-    const firstLetter = firstName.charAt(0).toUpperCase();
+    const firstLetter = firstName[0].toUpperCase();
     return colorMap[firstLetter] || '#3498db'; 
 }
 const avatarElement = document.getElementById('avatar');
@@ -44,7 +44,7 @@ function getAvatarColor(lastName) {
         'E': '#C46693', 'K': '#C46693', 'Q': '#C46693', 'W': '#C46693',
         'F': '#78518A', 'L': '#78518A', 'R': '#78518A', 'X': '#78518A'
     };
-   const lastLetter=lastName.charAt(0).toUpperCase(); 
+   const lastLetter=lastName[0].toUpperCase(); 
 return colorMap[lastLetter] || "#3498vb";
    
 }
