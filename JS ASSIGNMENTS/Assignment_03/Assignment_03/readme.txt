@@ -11,5 +11,6 @@ Run command
 
 
 2: For running on browser
+comment the statement in JS "const axios = require('axios');"
 Add CDN refrence in HTML file
 "<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>"
